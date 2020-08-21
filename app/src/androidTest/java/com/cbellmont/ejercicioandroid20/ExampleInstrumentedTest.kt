@@ -1,4 +1,4 @@
-package com.cbellmont.ejercicioandroid11
+package com.cbellmont.ejercicioandroid20
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

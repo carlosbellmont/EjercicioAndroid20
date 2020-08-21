@@ -1,4 +1,4 @@
-package com.cbellmont.ejercicioandroid11
+package com.cbellmont.ejercicioandroid20
 
 import android.content.Context
 import android.os.Bundle
@@ -22,7 +22,6 @@ class PersonajeFragment : Fragment() {
             }
         }
     }
-
 
     lateinit var personaje : Personaje
     private var mainInterface: MainActivityFragmentInterface? = null

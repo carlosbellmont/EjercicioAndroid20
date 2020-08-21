@@ -1,4 +1,4 @@
-package com.cbellmont.ejercicioandroid11
+package com.cbellmont.ejercicioandroid20
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,7 +13,6 @@ interface MainActivityAdapterInterface {
 interface MainActivityFragmentInterface {
     fun onMainActivityAttached()
     fun onMainActivityDetached()
-
 }
 
 

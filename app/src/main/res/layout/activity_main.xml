@@ -17,12 +17,14 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
-        app:layout_constraintStart_toStartOf="@+id/recyclerView"
-        app:layout_constraintTop_toTopOf="@+id/recyclerView">
-    </FrameLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        android:padding="20dp"
+        android:elevation="10dp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
