@@ -5,11 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
-class PersonajesAdapter(var listaPersonajes : List<Personaje>) : RecyclerView.Adapter<PersonajesAdapter.PersonajesViewHolder>()  {
+class PersonajesAdapter(var inter : MainActivityAdapterInterface, var listaPersonajes : List<Personaje>) : RecyclerView.Adapter<PersonajesAdapter.PersonajesViewHolder>()  {
 
     class PersonajesViewHolder(val root: View, val  imageView: ImageView, val textViewNombre: TextView, val textViewRaza : TextView) : RecyclerView.ViewHolder(root)
 
@@ -32,7 +31,7 @@ class PersonajesAdapter(var listaPersonajes : List<Personaje>) : RecyclerView.Ad
         holder.textViewRaza.text = listaPersonajes[position].raza
         holder.root.setBackgroundColor(ContextCompat.getColor(holder.root.context, if (listaPersonajes[position].esBueno) R.color.colorBgBueno else R.color.colorBgMalo))
 
-        holder.imageView.setOnClickListener{ Toast.makeText(it.context, "Yo me llamo ${listaPersonajes[position].nombre}", Toast.LENGTH_LONG).show() }
+        holder.imageView.setOnClickListener{ inter.onPersonajeCliked(listaPersonajes[position]) }
     }
 }
 
